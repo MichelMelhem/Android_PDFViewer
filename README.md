@@ -1,37 +1,17 @@
 
-# Looking for new maintainer!
-
-
 # Android PdfViewer
 
-__AndroidPdfViewer 1.x is available on [AndroidPdfViewerV1](https://github.com/barteksc/AndroidPdfViewerV1)
-repo, where can be developed independently. Version 1.x uses different engine for drawing document on canvas,
-so if you don't like 2.x version, try 1.x.__
+This project is  a fork of the original  [barteksc android pdf-viewer](https://github.com/barteksc/AndroidPdfViewer) with some re-work
 
-Library for displaying PDF documents on Android, with `animations`, `gestures`, `zoom` and `double tap` support.
-It is based on [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for decoding PDF files. Works on API 11 (Android 3.0) and higher.
-Licensed under Apache License 2.0.
+## What's new in this version :
+- First Pdfium has been updated to the latest stable as this day 
+- Also now Pdfium-android and the PDFViewer are now merged together for simpler sustainability
+- Gradle has also been updated
 
-## What's new in 3.2.0-beta.1?
-* Merge PR #714 with optimized page load
-* Merge PR #776 with fix for max & min zoom level
-* Merge PR #722 with fix for showing right position when view size changed
-* Merge PR #703 with fix for too many threads
-* Merge PR #702 with fix for memory leak
-* Merge PR #689 with possibility to disable long click
-* Merge PR #628 with fix for hiding scroll handle
-* Merge PR #627 with `fitEachPage` option
-* Merge PR #638 and #406 with fixed NPE
-* Merge PR #780 with README fix
-* Update compile SDK and support library to 28
-* Update Gradle and Gradle Plugin
 
-## Changes in 3.0 API
-* Replaced `Contants.PRELOAD_COUNT` with `PRELOAD_OFFSET`
-* Removed `PDFView#fitToWidth()` (variant without arguments)
-* Removed `Configurator#invalidPageColor(int)` method as invalid pages are not rendered
-* Removed page size parameters from `OnRenderListener#onInitiallyRendered(int)` method, as document may have different page sizes
-* Removed `PDFView#setSwipeVertical()` method
+## Do y have plans to update this version
+
+Yes Sure this version may be updated monthly. And will be happy to merge any bug fixes.
 
 ## Installation
 
@@ -127,7 +107,7 @@ There is default implementation shipped with AndroidPdfViewer, and you can use i
 By using constructor with second argument (`new DefaultScrollHandle(this, true)`), handle can be placed left or top.
 
 You can also create custom scroll handles, just implement **ScrollHandle** interface.
-All methods are documented as Javadoc comments on interface [source](https://github.com/barteksc/AndroidPdfViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/scroll/ScrollHandle.java).
+All methods are documented as Javadoc comments on interface [source](https://github.com/MichelMelhem/Android_PDFViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/scroll/ScrollHandle.java).
 
 ## Document sources
 Version 2.3.0 introduced _document sources_, which are just providers for PDF documents.
@@ -151,7 +131,7 @@ is used and clicking on link that references page in same document causes jump t
 and clicking on link that targets some URI causes opening it in default application.
 
 You can also create custom link handlers, just implement **LinkHandler** interface and set it using
-`Configurator#linkHandler(LinkHandler)` method. Take a look at [DefaultLinkHandler](https://github.com/barteksc/AndroidPdfViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/link/DefaultLinkHandler.java)
+`Configurator#linkHandler(LinkHandler)` method. Take a look at [DefaultLinkHandler](https://github.com/MichelMelhem/Android_PDFViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/link/DefaultLinkHandler.java)
 source to implement custom behavior.
 
 ## Pages fit policy
