@@ -15,13 +15,11 @@ Yes Sure this version may be updated monthly. And will be happy to merge any bug
 
 ## Installation
 
+
 Add to _build.gradle_:
 
-`implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'`
 
-or if you want to use more stable version:
- 
-`implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'`
+`implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'`
 
 Library is available in jcenter repository, probably it'll be in Maven Central soon.
 
