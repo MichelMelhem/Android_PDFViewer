@@ -9,7 +9,7 @@ This project is  a fork of the original  [barteksc android pdf-viewer](https://g
 - Gradle has also been updated
 
 
-## Do y have plans to update this version
+## Do I have plans to update this version
 
 Yes Sure this version may be updated monthly. And will be happy to merge any bug fixes.
 
