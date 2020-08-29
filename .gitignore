@@ -28,15 +28,3 @@ local.properties
 .gradle
 
 .DS_Store
-
-src/main/libs
-src/main/obj
-
-#pdfium subproject
-
-/pdfium-android/.gradle
-/pdfium-android//local.properties
-/pdfium-android/.idea/
-/pdfium-android/.DS_Store
-/pdfium-android//build
-/pdfium-android//captures

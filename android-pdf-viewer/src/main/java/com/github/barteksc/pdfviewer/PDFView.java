@@ -62,10 +62,10 @@ import com.github.barteksc.pdfviewer.util.FitPolicy;
 import com.github.barteksc.pdfviewer.util.MathUtils;
 import com.github.barteksc.pdfviewer.util.SnapEdge;
 import com.github.barteksc.pdfviewer.util.Util;
-import com.shockwave.pdfium.PdfDocument;
-import com.shockwave.pdfium.PdfiumCore;
-import com.shockwave.pdfium.util.Size;
-import com.shockwave.pdfium.util.SizeF;
+import com.github.axet.pdfium.PdfDocument;
+import com.github.axet.pdfium.PdfiumCore;
+import com.github.axet.pdfium.util.Size;
+import com.github.axet.pdfium.util.SizeF;
 
 import java.io.File;
 import java.io.InputStream;
@@ -95,7 +95,7 @@ public class PDFView extends RelativeLayout {
 
     private static final String TAG = PDFView.class.getSimpleName();
 
-    public static final float DEFAULT_MAX_SCALE = 3.0f;
+    public static final float DEFAULT_MAX_SCALE = 10.0f;
     public static final float DEFAULT_MID_SCALE = 1.75f;
     public static final float DEFAULT_MIN_SCALE = 1.0f;
 

@@ -17,10 +17,12 @@ package com.github.barteksc.pdfviewer;
 
 import android.os.AsyncTask;
 
+
 import com.github.barteksc.pdfviewer.source.DocumentSource;
-import com.shockwave.pdfium.PdfDocument;
-import com.shockwave.pdfium.PdfiumCore;
-import com.shockwave.pdfium.util.Size;
+import com.github.axet.pdfium.PdfDocument;
+import com.github.axet.pdfium.PdfiumCore;
+import com.github.axet.pdfium.util.Size;
+
 
 import java.lang.ref.WeakReference;
 
